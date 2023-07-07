@@ -70,8 +70,8 @@ const StatusNav = () => {
                 <option
                   className={
                     filterProduct === btns
-                      ? "bg-lime-300 capitalize"
-                      : "capitalize"
+                      ? "bg-lime-300 py-2 capitalize"
+                      : "capitalize py-2"
                   }
                   key={i}
                   value={btns}
