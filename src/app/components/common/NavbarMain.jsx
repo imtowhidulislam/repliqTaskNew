@@ -48,7 +48,7 @@ const NavbarMain = ({ params }) => {
               <Link href="/">
                 <h2 className="flex items-center gap-2 text-2xl font-bold uppercase text-lime-700">
                   <span className="text-pink-500">
-                    <RiShoppingBagFill />
+                    <RiShoppingBagFill className="text-4xl" />
                   </span>
                   repliq
                 </h2>
@@ -58,7 +58,7 @@ const NavbarMain = ({ params }) => {
               <Link
                 className={
                   currentPath === "/"
-                    ? "navList navLink text-lime-600"
+                    ? "navList navLink text-lime-700"
                     : "navLink navList"
                 }
                 href="/"
@@ -69,7 +69,7 @@ const NavbarMain = ({ params }) => {
               <Link
                 className={
                   currentPath === "/optionalTask"
-                    ? "navLink navList text-lime-600"
+                    ? "navLink navList text-lime-700"
                     : "navLink navList"
                 }
                 href="/optionalTask"

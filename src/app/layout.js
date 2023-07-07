@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
               {/* </main> */}
               <Toaster />
             </QueryClientProvider>
-          <Footer />
+          {/* <Footer /> */}
           </CartProvider>
         </body>
     </html>

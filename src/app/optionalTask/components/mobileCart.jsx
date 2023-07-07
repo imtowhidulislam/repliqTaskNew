@@ -9,15 +9,15 @@ const MobileCart = ({ filterProductData }) => {
         filterProductData.map((item) => {
           const { id, name, price, category, image, status } = item;
           return (
-            <div key={id} className="p-4 rounded-md drop-shadow-md border-2 border-gray-400 max-w-xs">
-              <div className="grid grid-cols-userLayout gap-4 ">
+            <div key={id} className="p-4 rounded-md drop-shadow-md border-2 border-gray-400 max-w-md">
+              <div className="grid grid-cols-collectionLayout gap-4 ">
                 <div className="">
                   <p className="capitalize text-xl font-bold">{name}</p>
                   <p className="mt-2 capitalize text-sm">category</p>
                   <p className="capitalize text-xl text-blue-600 font-bold mt-5">$ {price}</p>
                 </div>
                 <div className="rounded-md overflow-hidden">
-                  <Image className="object-cover aspect-square object-center" src={image} alt={name} width={150} height={150} />
+                  <Image className="object-cover aspect-square object-center" src={image} alt={name} width={200} height={180} />
                 </div>
               </div>
               <div className="w-full mt-6">

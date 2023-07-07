@@ -41,9 +41,9 @@ body {
   @apply w-full cursor-pointer rounded-sm bg-transparent px-4 py-2 transition-all duration-200 ease-in-out hover:bg-lime-700 hover:text-gray-50 hover:drop-shadow-md;
 }
 .navLink {
-  @apply flex justify-center items-center gap-2 text-base font-bold capitalize;
+  @apply text-base font-bold capitalize;
 }
-.flexRow {
+.flexRow1 {
   @apply flex items-center;
 }
 /* *** Subscribe Components Style Start */
