@@ -65,26 +65,7 @@ const NavbarMain = ({ params }) => {
               >
                 Home
               </Link>
-              <Link
-                className={
-                  currentPath === "/product"
-                    ? "navLink navList text-lime-600"
-                    : "navLink navList"
-                }
-                href="/product"
-              >
-                Product
-              </Link>
-              <Link
-                className={
-                  currentPath === "/dashboard"
-                    ? "navLink navList text-lime-600"
-                    : "navLink navList"
-                }
-                href="/dashboard"
-              >
-                Dashboard
-              </Link>
+
               <Link
                 className={
                   currentPath === "/optionalTask"
@@ -95,55 +76,6 @@ const NavbarMain = ({ params }) => {
               >
                 Additonal Task
               </Link>
-            </div>
-            <div className="flexRow gap-4">
-              <li>
-                <SearchButton />
-              </li>
-            </div>
-            <div className="flexRow gap-4">
-              <li className="flex items-center gap-2">
-                <span>
-                  <VscAccount />
-                </span>
-                <Link
-                  className={
-                    currentPath === "/register"
-                      ? "navLink text-lime-600"
-                      : "navLink"
-                  }
-                  href="/register"
-                >
-                  {" "}
-                  Account
-                </Link>
-              </li>
-              <li className="flex items-center gap-2 ">
-                <span className="countCart">
-                  <BsCartPlus />
-                </span>
-                <Link
-                  className={
-                    currentPath === "/cart"
-                      ? "navLink relative text-lime-600"
-                      : "navLink relative"
-                  }
-                  href="/cart"
-                >
-                  Cart{" "}
-                  <span>
-                    <p
-                      className={
-                        currentPath === "/cart"
-                          ? "absolute left-full top-0 mb-1 ml-1 flex h-4 w-4 items-center justify-center rounded-full bg-gray-300 text-extraSmall font-bold text-lime-900"
-                          : "absolute left-full top-0 mb-1 ml-1 flex h-4 w-4 items-center justify-center rounded-full bg-gray-300 text-extraSmall font-bold"
-                      }
-                    >
-                      {cartItem.length}
-                    </p>
-                  </span>
-                </Link>
-              </li>
             </div>
           </nav>
         ) : (
@@ -167,11 +99,6 @@ const NavbarMain = ({ params }) => {
               }
             >
               <div className="">
-                <div>
-                  <li>
-                    <SearchButton />
-                  </li>
-                </div>
                 <div className="mt-4 gap-2">
                   <Link
                     onClick={toggleMobNav}
@@ -188,29 +115,6 @@ const NavbarMain = ({ params }) => {
                   <Link
                     onClick={toggleMobNav}
                     className={
-                      currentPath === "/product"
-                        ? "navLink navList text-lime-200"
-                        : "navLink navList"
-                    }
-                    href="/product"
-                  >
-                    Product
-                  </Link>
-
-                  <Link
-                    onClick={toggleMobNav}
-                    className={
-                      currentPath === "/dashboard"
-                        ? "navLink navList text-lime-200"
-                        : "navLink navList"
-                    }
-                    href="/dashboard"
-                  >
-                    Dashboard
-                  </Link>
-                  <Link
-                    onClick={toggleMobNav}
-                    className={
                       currentPath === "/optionalTask"
                         ? "navLink navList text-lime-200"
                         : "navLink navList"
@@ -219,52 +123,6 @@ const NavbarMain = ({ params }) => {
                   >
                     Additional Task
                   </Link>
-
-                  <li className="navList flex items-center justify-start gap-2 py-2">
-                    <Link
-                      onClick={toggleMobNav}
-                      className={
-                        currentPath === "/register"
-                          ? "navLink text-lime-200"
-                          : "navLink"
-                      }
-                      href="/register"
-                    >
-                      {" "}
-                      <span>
-                        <VscAccount />
-                      </span>{" "}
-                      Account
-                    </Link>
-                  </li>
-                  <li className="navList flex items-center justify-start gap-2 py-2">
-                    <Link
-                      onClick={toggleMobNav}
-                      className={
-                        currentPath === "/cart"
-                          ? "navLink relative text-lime-200"
-                          : "navLink relative"
-                      }
-                      href="/cart"
-                    >
-                      {" "}
-                      <span>
-                        <BsCartPlus />
-                      </span>{" "}
-                      Cart{" "}
-                      <span>
-                        <p
-                          className={
-                            currentPath === "/cart"
-                              ? "absolute -top-2 left-14 mb-1 ml-1 flex h-4 w-4 items-center justify-center rounded-full bg-gray-300 text-extraSmall font-bold text-lime-900"
-                              : "absolute -top-3 left-14 mb-1 ml-1 flex h-4 w-4 items-center justify-center rounded-full bg-gray-300 text-extraSmall font-bold"
-                          }
-                        >
-                          {cartItem.length}
-                        </p>
-                      </span>
-                    </Link>
-                  </li>
                 </div>
               </div>
             </div>
