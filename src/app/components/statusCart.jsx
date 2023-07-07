@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from "react";
 import Image from "next/image";
 import CartContextProvider from "@/app/context/cartContext";
-import MobileCart from "@/app/components/mobileCart";
+import MobileCart from "./mobileCart";
 
 const StatusCart = () => {
   const { status } = useContext(CartContextProvider);

@@ -1,5 +1,6 @@
-import React, { useContext, useEffect, useState } from "react";
 import CartContextProvider from "@/app/context/cartContext";
+import React, { useContext, useEffect, useState } from "react";
+
 const StatusNav = () => {
   const { status } = useContext(CartContextProvider);
   const localTaskData = localStorage.getItem("taskData");

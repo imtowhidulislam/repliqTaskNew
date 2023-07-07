@@ -11,6 +11,8 @@ import Subscribe from "./components/Subscribe";
 import { HiOutlineArrowCircleUp } from "react-icons/hi";
 import CartContextProvider from "./context/cartContext";
 import { useProductData } from "./Data/productData";
+import StatusNav from "./components/statusNav";
+import StatusCart from "./components/statusCart";
 
 export default function Home() {
   const { data, isLoading, error: error } = useProductData();
@@ -20,10 +22,9 @@ export default function Home() {
 
   return (
     <>
-      <div>
-        <div>
-          <h2>home page</h2>
-        </div>
+      <div className="mt-40 py-20 md:py-8 md:mt-0 min-h-custom-h-form container">
+        <StatusNav />
+        <StatusCart />
       </div>
     </>
   );

@@ -63,19 +63,9 @@ const NavbarMain = ({ params }) => {
                 }
                 href="/"
               >
-                Home
-              </Link>
-
-              <Link
-                className={
-                  currentPath === "/optionalTask"
-                    ? "navLink navList text-lime-700"
-                    : "navLink navList"
-                }
-                href="/optionalTask"
-              >
                 Additonal Task
               </Link>
+
             </div>
           </nav>
         ) : (
@@ -109,20 +99,10 @@ const NavbarMain = ({ params }) => {
                     }
                     href="/"
                   >
-                    Home
+                    Additonal Task
                   </Link>
 
-                  <Link
-                    onClick={toggleMobNav}
-                    className={
-                      currentPath === "/optionalTask"
-                        ? "navLink navList text-lime-200"
-                        : "navLink navList"
-                    }
-                    href="/optionalTask"
-                  >
-                    Additional Task
-                  </Link>
+                  
                 </div>
               </div>
             </div>
